@@ -16,6 +16,7 @@ import javax.persistence.Table;
 public class User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
+	
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long Id;
@@ -106,6 +107,9 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
+	public List<Order> getOrders() {
+		return orders;
+	}
 	
 	
 }
