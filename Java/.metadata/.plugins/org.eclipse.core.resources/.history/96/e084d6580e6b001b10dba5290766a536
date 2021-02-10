@@ -1,0 +1,10 @@
+package com.example.projeto.entities;
+
+public class Payment {
+	
+	private Long ID;
+	private Instant moment;
+	
+	private Order order;
+
+}
